@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Ankole Students' Association</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">Ankole</span>
+                            <span class="logo-sub">Students' Association</span>
+                        </div>
+                    </a>
+
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="leadership.html">Leadership</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="donate.html" class="nav-cta">Support</a></li>
+                    </ul>
+
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up" data-aos-duration="800">Contact Us</h1>
+            <div class="breadcrumb" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Contact</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-info section">
+        <div class="container">
+            <div class="contact-cards">
+                <div class="contact-card" data-aos="fade-up" data-aos-duration="800">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>National Secretariat</h3>
+                    <p>Plot 15, High Street<br>Mbarara City<br>Uganda</p>
+                </div>
+
+                <div class="contact-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>General Inquiries:<br>info@ankolestudents.ug</p>
+                    <p>Membership:<br>join@ankolestudents.ug</p>
+                </div>
+
+                <div class="contact-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Office: +256 414 123 456</p>
+                    <p>President: +256 700 111 222</p>
+                    <p>Secretary: +256 772 333 444</p>
+                </div>
+
+                <div class="contact-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Office Hours</h3>
+                    <p>Monday - Friday: 9am - 5pm</p>
+                    <p>Saturday: 10am - 2pm</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section bg-light">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-wrapper" data-aos="fade-right" data-aos-duration="1000">
+                    <h2>Send Us a Message</h2>
+                    <p>Have questions about membership, events, or anything else? We'd love to hear from you. Fill out
+                        the form and we'll respond within 24 hours.</p>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>First Name *</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name *</label>
+                                <input type="text" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Email *</label>
+                                <input type="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input type="tel">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>University/District</label>
+                            <input type="text" placeholder="e.g., Makerere University or Mbarara">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Subject *</label>
+                            <select required>
+                                <option value="">Select Subject</option>
+                                <option>Membership Inquiry</option>
+                                <option>Event Information</option>
+                                <option>Partnership Opportunity</option>
+                                <option>General Question</option>
+                                <option>Report an Issue</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Message *</label>
+                            <textarea rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="map-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                    <h2>Find Us in Mbarara</h2>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.753627140324!2d30.654234!3d-0.607123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x191s0x19d9123456789abc%3A0x123456789abcdef!2sMbarara%2C%20Uganda!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    
+                    <div class="meeting-times">
+                        <h3>National Executive Meetings</h3>
+                        <p><i class="fas fa-calendar-alt"></i> First Saturday of every month, 10:00 AM</p>
+                        <p><i class="fas fa-map-marker-alt"></i> National Secretariat, Mbarara (or via Zoom)</p>
+                        <p>All members welcome to attend and observe</p>
+                    </div>
+
+                    <div class="university-contacts">
+                        <h3>University Chapter Contacts</h3>
+                        <div class="chapter-contact-list">
+                            <p><strong>Makerere:</strong> +256 700 111 222 (John)</p>
+                            <p><strong>Kyambogo:</strong> +256 772 333 444 (Sarah)</p>
+                            <p><strong>MUBS:</strong> +256 701 555 666 (Peter)</p>
+                            <p><strong>Gulu:</strong> +256 782 777 888 (Grace)</p>
+                            <p><strong>UCU:</strong> +256 703 999 000 (David)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-media section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up" data-aos-duration="800">
+                <span class="section-tag">Tukwatane</span>
+                <h2>Connect With Us on <span class="text-green">Social Media</span></h2>
+                <p>Follow us for latest updates, events, and community news</p>
+            </div>
+
+            <div class="social-grid">
+                <a href="#" class="social-item facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Ankole Students Association</span>
+                </a>
+                <a href="#" class="social-item twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>@AnkoleStudents</span>
+                </a>
+                <a href="#" class="social-item instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>@ankolestudents</span>
+                </a>
+                <a href="#" class="social-item whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp Channel</span>
+                </a>
+                <a href="#" class="social-item telegram">
+                    <i class="fab fa-telegram"></i>
+                    <span>Telegram Group</span>
+                </a>
+                <a href="#" class="social-item youtube">
+                    <i class="fab fa-youtube"></i>
+                    <span>Ankole Students TV</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="university-chapters-contact bg-light">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up" data-aos-duration="800">
+                <span class="section-tag">University Chapters</span>
+                <h2>Contact Your <span class="text-green">Campus Representative</span></h2>
+            </div>
+
+            <div class="chapters-contact-grid" data-aos="fade-up" data-aos-duration="1000">
+                <div class="chapter-contact-card">
+                    <h3>Makerere University</h3>
+                    <p class="rep-name">Mugisha John - Chairperson</p>
+                    <p><i class="fas fa-phone"></i> +256 700 111 222</p>
+                    <p><i class="fas fa-envelope"></i> makerere@ankolestudents.ug</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Freedom Square, Every Tuesday 4pm</p>
+                </div>
+                <div class="chapter-contact-card">
+                    <h3>Kyambogo University</h3>
+                    <p class="rep-name">Ninsiima Grace - Chairperson</p>
+                    <p><i class="fas fa-phone"></i> +256 772 333 444</p>
+                    <p><i class="fas fa-envelope"></i> kyambogo@ankolestudents.ug</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Guild Hall, Wednesdays 3pm</p>
+                </div>
+                <div class="chapter-contact-card">
+                    <h3>Makerere University Business School</h3>
+                    <p class="rep-name">Tumusiime Peter - Chairperson</p>
+                    <p><i class="fas fa-phone"></i> +256 701 555 666</p>
+                    <p><i class="fas fa-envelope"></i> mubs@ankolestudents.ug</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Main Building, Thursdays 5pm</p>
+                </div>
+                <div class="chapter-contact-card">
+                    <h3>Gulu University</h3>
+                    <p class="rep-name">Atuhaire Grace - Chairperson</p>
+                    <p><i class="fas fa-phone"></i> +256 782 777 888</p>
+                    <p><i class="fas fa-envelope"></i> gulu@ankolestudents.ug</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Medical School, Fridays 4pm</p>
+                </div>
+                <div class="chapter-contact-card">
+                    <h3>Uganda Christian University</h3>
+                    <p class="rep-name">Turyasingura David - Chairperson</p>
+                    <p><i class="fas fa-phone"></i> +256 703 999 000</p>
+                    <p><i class="fas fa-envelope"></i> ucu@ankolestudents.ug</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Law Building, Mondays 3pm</p>
+                </div>
+                <div class="chapter-contact-card">
+                    <h3>Bishop Stuart University</h3>
+                    <p class="rep-name">Komugisha Esther - Chairperson</p>
+                    <p><i class="fas fa-phone"></i> +256 704 444 555</p>
+                    <p><i class="fas fa-envelope"></i> bsu@ankolestudents.ug</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Main Campus, Tuesdays 2pm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up" data-aos-duration="800">
+                <span class="section-tag">FAQ</span>
+                <h2>Frequently Asked <span class="text-green">Questions</span></h2>
+            </div>
+
+            <div class="faq-grid" data-aos="fade-up" data-aos-duration="1000">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I join the association?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can join by visiting our Join page and filling out the membership form. Student membership is UGX 10,000 per year, and citizen membership is UGX 25,000 per year. You'll receive a welcome email within 48 hours.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>I'm not from Ankole. Can I still join?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>While our focus is on Ankole culture and community, we welcome anyone who respects our heritage and wants to learn. We have several associate members from other regions who actively participate in our events.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I start a chapter at my university?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>If your university doesn't have a chapter yet, contact our National Secretary at secretary@ankolestudents.ug. We'll guide you through the process of establishing a chapter, including recruiting founding members and holding elections.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What events do you organize?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We organize cultural events (Ekitaguriro festivals, Runyankole language workshops), academic events (study groups, career fairs), social gatherings, and leadership retreats. Check our Events page for upcoming activities.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can parents or citizens attend events?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Our events are open to all Ankole citizens. We especially welcome parents and elders who can share wisdom and mentor our youth. Many events are specifically designed for intergenerational connection.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I become a mentor?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>If you're an alumnus or professional interested in mentoring, please fill out the mentor application form on our Resources page. We'll match you with students based on your profession and interests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Ankole Students' Association</span>
+                    </div>
+                    <p>Uniting Ankole students across Ugandan universities, preserving our culture, and empowering future leaders since 1995.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="leadership.html">Leadership</a></li>
+                        <li><a href="join.html">Membership</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Universities</h4>
+                    <ul>
+                        <li><a href="#">Makerere University</a></li>
+                        <li><a href="#">Kyambogo University</a></li>
+                        <li><a href="#">MUBS</a></li>
+                        <li><a href="#">Gulu University</a></li>
+                        <li><a href="#">UCU</a></li>
+                        <li><a href="#">Bishop Stuart</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> National Secretariat, Mbarara</li>
+                        <li><i class="fas fa-envelope"></i> info@ankolestudents.ug</li>
+                        <li><i class="fas fa-phone"></i> +256 700 123 456</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9am - 5pm</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h4>Subscribe to Our Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ankole Students' Association. All rights reserved. | Empowering Ankole Youth Across Uganda</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
