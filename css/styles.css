@@ -222,6 +222,10 @@ img {
     transition: var(--transition);
     box-shadow: var(--shadow-green);
     border: 2px solid var(--gold);
+    
+    img {
+        border-radius: 50%;
+    }
 }
 
 .logo:hover .logo-icon {
@@ -3366,6 +3370,7 @@ img {
     margin-bottom: 20px;
     color: var(--gold);
     font-size: 20px;
+    display: none;
 }
 
 .newsletter-form {
