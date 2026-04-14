@@ -642,6 +642,7 @@ img {
 }
 
 .hero-text {
+    color: white;
     font-size: 20px;
     max-width: 700px;
     margin-bottom: 40px;
@@ -1413,6 +1414,7 @@ img {
 }
 
 .member-year {
+    display: none;
     font-size: 13px;
     color: var(--gray);
     margin-bottom: 15px;
@@ -3710,6 +3712,9 @@ img {
 }
 
 @media (max-width: 480px) {
+    .logo-sub {
+        display: none;
+    }
     .hero-title {
         font-size: 36px;
     }
@@ -3775,6 +3780,7 @@ img {
 }
 
 .twaleJames {
+    display: none;
     position: fixed;
     top: 50%;
     width: fit-content;
