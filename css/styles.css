@@ -1423,7 +1423,7 @@ img {
 .member-contact-info {
     font-size: 13px;
     color: var(--gray);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     gap: 8px;
@@ -2965,7 +2965,7 @@ img {
 }
 
 .leader-contacts {
-    display: flex;
+    display: none;
     gap: 25px;
     flex-wrap: wrap;
 }
