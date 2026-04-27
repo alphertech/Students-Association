@@ -1,5 +1,3 @@
-// script.js - Complete JavaScript without preloader
-
 // Initialize AOS
 AOS.init({
     duration: 1000,
@@ -209,87 +207,6 @@ function handleFormSubmit(form, successMessage) {
         });
     }
 }
-
-handleFormSubmit(membershipForm, 'Thank you for applying! We\'ll be in touch within 48 hours.');
-handleFormSubmit(contactForm, 'Thank you for your message! We\'ll respond within 24 hours.');
-
-// Donation form specific handling
-if (donationForm) {
-    donationForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        const requiredFields = donationForm.querySelectorAll('[required]');
-        let isValid = true;
-        
-        requiredFields.forEach(field => {
-            if (!field.value.trim()) {
-                field.style.borderColor = '#ff4444';
-                isValid = false;
-                
-                setTimeout(() => {
-                    field.style.borderColor = '';
-                }, 3000);
-            } else {
-                field.style.borderColor = '#2E5C3E';
-            }
-        });
-        
-        if (isValid) {
-            const submitBtn = donationForm.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
-            
-            submitBtn.innerHTML = 'Processing... <i class="fas fa-spinner fa-spin"></i>';
-            submitBtn.disabled = true;
-            
-            setTimeout(() => {
-                alert('Thank you for your generous donation! You will receive a receipt via email.');
-                donationForm.reset();
-                submitBtn.innerHTML = originalText;
-                submitBtn.disabled = false;
-            }, 1500);
-        } else {
-            alert('Please fill in all required fields.');
-        }
-    });
-}
-
-// Donation amount buttons
-const amountBtns = document.querySelectorAll('.amount-btn');
-const customAmount = document.getElementById('customAmount');
-
-if (amountBtns.length > 0) {
-    amountBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            amountBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            
-            if (customAmount) {
-                customAmount.value = '';
-            }
-        });
-    });
-}
-
-if (customAmount) {
-    customAmount.addEventListener('focus', () => {
-        amountBtns.forEach(b => b.classList.remove('active'));
-    });
-}
-
-// Newsletter Form
-const newsletterForms = document.querySelectorAll('.newsletter-form, .sidebar-newsletter');
-
-newsletterForms.forEach(form => {
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const email = form.querySelector('input[type="email"]').value;
-        
-        if (email) {
-            alert('Thank you for subscribing to our newsletter!');
-            form.reset();
-        }
-    });
-});
 
 // Back to Top Button
 const backToTop = document.getElementById('backToTop');
