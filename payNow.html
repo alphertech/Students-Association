@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Access Restricted | Developer Notice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0f1c;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        /* simple card — small, professional */
+        .card {
+            max-width: 460px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 1.8rem 1.6rem;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+            border: 1px solid #eef2f6;
+        }
+
+        /* minimal lock icon */
+        .lock {
+            text-align: center;
+            margin-bottom: 1.2rem;
+        }
+
+        .lock span {
+            font-size: 2.2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1e293b;
+            text-align: center;
+            margin-bottom: 1.2rem;
+            letter-spacing: -0.2px;
+        }
+
+        .message {
+            background: #f8fafc;
+            padding: 1rem 1.2rem;
+            border-radius: 14px;
+            margin-bottom: 1.5rem;
+            border-left: 3px solid #e11d48;
+        }
+
+        .message p {
+            color: #334155;
+            font-size: 0.95rem;
+            line-height: 1.45;
+            margin-bottom: 0.6rem;
+        }
+
+        .message p:last-child {
+            margin-bottom: 0;
+        }
+
+        .message strong {
+            color: #0f172a;
+        }
+
+        .contact-badge {
+            font-family: monospace;
+            font-size: 0.8rem;
+            background: #f1f5f9;
+            padding: 0.25rem 0.8rem;
+            border-radius: 30px;
+            display: inline-block;
+            color: #475569;
+            margin-top: 0.5rem;
+        }
+
+        /* action row: two buttons side by side */
+        .actions {
+            display: flex;
+            gap: 1rem;
+            margin: 1.5rem 0 0.8rem;
+        }
+
+        .btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 0.7rem 0.5rem;
+            border-radius: 60px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+            cursor: pointer;
+        }
+
+        .btn-wa {
+            background: #25D366;
+            color: white;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-wa:hover {
+            background: #20b859;
+            transform: translateY(-1px);
+        }
+
+        .btn-call {
+            background: #2563eb;
+            color: white;
+        }
+
+        .btn-call:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+
+        .btn svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+            stroke: none;
+        }
+
+        .btn-call svg {
+            fill: none;
+            stroke: white;
+            stroke-width: 2;
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 0.7rem;
+            color: #94a3b8;
+            margin-top: 1.2rem;
+            padding-top: 0.5rem;
+            border-top: 1px solid #edf2f7;
+        }
+
+        /* responsive */
+        @media (max-width: 480px) {
+            .card {
+                padding: 1.4rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .btn {
+                font-size: 0.8rem;
+                padding: 0.6rem 0.3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="lock">
+            <span>🔒</span>
+        </div>
+        <h2>Access Restricted</h2>
+        <div class="message">
+            <p>
+                <strong>Access to this website has been made private by the developer</strong> due to
+                <strong>failed payment from the site owner</strong>.
+            </p>
+            <p>
+                Speak to the developer for more information and to understand why this is happening.
+            </p>
+            <!-- <div class="contact-badge">
+                📧 developer@restricted · 📞 +256 708 885 123
+            </div> -->
+        </div>
+
+        <!-- two icons: whatsapp + dialer, both pointing to the given number -->
+        <div class="actions">
+            <a href="#" id="whatsappBtn" class="btn btn-wa">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="white">
+                    <path
+                        d="M12.032 2.004c-5.512 0-9.986 4.474-9.986 9.986 0 1.76.458 3.473 1.329 4.992l-1.412 5.155 5.276-1.383c1.468.854 3.11 1.304 4.793 1.304 5.512 0 9.986-4.474 9.986-9.986S17.544 2.004 12.032 2.004zm0 18.416c-1.508 0-2.988-.411-4.242-1.176l-.304-.18-3.13.82.836-3.052-.198-.315a7.588 7.588 0 0 1-1.176-4.098c0-4.198 3.416-7.614 7.614-7.614s7.614 3.416 7.614 7.614-3.416 7.614-7.614 7.614zm4.172-5.704c-.229-.115-1.353-.668-1.562-.744-.21-.076-.362-.115-.515.115-.152.23-.59.744-.723.896-.133.153-.266.172-.495.057-.229-.115-.965-.356-1.839-1.135-.68-.606-1.14-1.354-1.273-1.582-.133-.23-.014-.354.1-.468.102-.102.229-.266.344-.399.115-.133.153-.23.229-.383.076-.153.038-.287-.019-.402-.057-.115-.515-1.24-.706-1.698-.186-.447-.375-.386-.515-.393-.133-.007-.286-.007-.44-.007-.152 0-.4.057-.61.286-.21.229-.8.783-.8 1.91 0 1.126.821 2.215.935 2.369.114.153 1.606 2.453 3.896 3.44.544.235.969.375 1.3.48.546.174 1.043.15 1.436.09.438-.066 1.353-.553 1.544-1.087.19-.534.19-.992.134-1.087-.057-.095-.21-.153-.438-.268z" />
+                </svg>
+                <span>WhatsApp</span>
+            </a>
+            <a href="#" id="callBtn" class="btn btn-call">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <span>Call</span>
+            </a>
+        </div>
+        <div class="footer-note">
+            payment resolution required · developer hold
+        </div>
+    </div>
+
+    <script>
+        // phone number as provided: Uganda number +256708885123
+        const DEV_PHONE = '+256708885123';
+        // whatsapp number without '+' for wa.me (clean)
+        const WA_NUMBER = '256708885123';
+
+        // WhatsApp button: pre-filled polite message
+        const waBtn = document.getElementById('whatsappBtn');
+        const callBtn = document.getElementById('callBtn');
+
+        // prefill message for clarity
+        const waMessage = "Hello, I'm reaching out regarding the website suspension due to failed payment. I'd like to understand why this is happening.";
+        const waUrl = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(waMessage)}`;
+
+        if (waBtn) {
+            waBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.open(waUrl, '_blank', 'noopener,noreferrer');
+            });
+            waBtn.setAttribute('href', waUrl);
+        }
+
+        // call button: tel: scheme
+        if (callBtn) {
+            callBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.location.href = `tel:${DEV_PHONE}`;
+            });
+            callBtn.setAttribute('href', `tel:${DEV_PHONE}`);
+        }
+
+        // tiny optional: display the phone number inside badge if needed (already static)
+        // console free – but ensures everything works
+    </script>
+</body>
+
+</html>
